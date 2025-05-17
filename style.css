@@ -1,22 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
+.wrapper {
+  overflow: hidden;
+  opacity: 0;
+}
+
 body {
   font-family: 'Kanit', sans-serif;
   text-align: center;
+  background-color: #222222;
+}
+
+* {
+  color: white;
 }
 
 textarea {
   font-size: 48px;
+  color: #222222;
   resize: none;
 }
 
 a {
   font-size: 26px;
   text-decoration: none;
-  color: blue;
+  color: #aaaaff;
   transition: 0.2s;
 }
 
 a:hover {
   color: orangered;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }

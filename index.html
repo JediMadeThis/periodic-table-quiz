@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../linkTransition/linkTransition.css" />
+
     <title>Periodic Table Quiz</title>
   </head>
   <body>
-    <h1>Periodic Table Quiz</h1>
-    <h2>Select a gamemode below</h2>
-    <a href="./Symbol/symbol.html">Guess the symbol</a>
-    <br />
-    <a href="./Atomic Number/atomic.html">Guess the atomic number</a>
+    <div class="wrapper" id="wrapper">
+      <h1>Periodic Table Quiz</h1>
+      <h2>Select a gamemode below</h2>
+
+      <a onclick="linkTransition('./Symbol/symbol.html')">Guess the symbol</a>
+      <br />
+      <a onclick="linkTransition('./Atomic Number/atomic.html')"
+        >Guess the atomic number</a
+      >
+      <br />
+      <a onclick="linkTransition('./Group/group.html')">Guess the group</a>
+    </div>
+
+    <div class="transitionPh" id="transitionPh"></div>
+
+    <script src="script.js"></script>
+    <script src="../linkTransition/linkTransition.js"></script>
   </body>
 </html>

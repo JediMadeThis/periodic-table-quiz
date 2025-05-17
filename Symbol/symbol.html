@@ -4,21 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../linkTransition/linkTransition.css" />
     <title>Periodic Table Quiz</title>
   </head>
   <body>
-    <center>
-      <h1>Periodic Table Quiz<br />Mode: Guess the symbol</h1>
+    <div class="wrapper" id="wrapper">
+      <h1>
+        Periodic Table Quiz
+        <br />
+        Mode: Symbol
+      </h1>
       <h2 id="name">Please wait on load...</h2>
       <textarea cols="3" rows="1" id="symbol"></textarea>
       <br />
       <p>
-        Type in the correct symbol in the textbox from the element name.<br />If
-        you got it correct, then it will move on to the next element
+        Type in the correct symbol in the textbox from the element name.
+        <br />
+        If you got it correct, then it will move on to the next element
         automatically.
       </p>
-    </center>
+
+      <a onclick="linkTransition('../index.html', true)">< Go back</a>
+    </div>
+
+    <div class="transitionPh" id="transitionPh"></div>
 
     <script src="script.js"></script>
+    <script src="../linkTransition/linkTransition.js"></script>
   </body>
 </html>
