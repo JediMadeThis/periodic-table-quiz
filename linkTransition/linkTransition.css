@@ -37,19 +37,22 @@ body {
 }
 
 @keyframes contentSlideRv {
+  0% {
+    transform: translateX(0%);
+  
   100% {
-    transform: translateX(30%);
+    transform: translateX(100%);
   }
 }
 
 @keyframes phSlideRv {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-30%);
     background-color: #555555;
   }
 
   100% {
-    transform: translateX(-30%);
+    transform: translateX(0%);
     background-color: #222222;
   }
 }
