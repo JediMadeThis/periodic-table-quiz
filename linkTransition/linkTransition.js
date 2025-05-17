@@ -1,7 +1,7 @@
 const transitionPh = document.getElementById('transitionPh');
 
 // Duration in seconds (default 0.7s)
-const animationDuration = 0.65;
+const animationDuration = 0.5;
 
 window.linkTransition = function (link, isBackwards = false) {
   document.body.style.animation = `contentSlide${
