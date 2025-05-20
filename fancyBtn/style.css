@@ -1,0 +1,47 @@
+.fancyBtn {
+  background-color: #434343;
+  border: none;
+  font-size: 28px;
+  font-weight: 600;
+  width: 450px;
+  height: 75px;
+  transition: background-color 0.2s ease-in-out;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.fancyBtn .fancyBtnContent {
+  transition: transform 0.2s ease-in-out;
+}
+
+.fancyBtn.top {
+  border-top-left-radius: 32.5px;
+  border-top-right-radius: 32.5px;
+}
+
+.fancyBtn.bottom {
+  border-bottom-left-radius: 32.5px;
+  border-bottom-right-radius: 32.5px;
+}
+
+.fancyBtn:active {
+  background-color: #5a5a5a;
+}
+
+.fancyBtn:active .fancyBtnContent {
+  transform: scale(0.98);
+}
+
+@keyframes pressButton {
+  0% {
+    background-color: #444444;
+    /* font-size: 20px; */
+    transform: scale(1);
+  }
+
+  100% {
+    background-color: #5a5a5a;
+    /* font-size: 19px; */
+    transform: scale(0.9);
+  }
+}

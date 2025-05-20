@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Londrina+Sketch&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 .wrapper {
   overflow: hidden;
@@ -6,12 +6,12 @@
 }
 
 body {
-  font-family: 'Kanit', sans-serif;
   text-align: center;
   background-color: #222222;
 }
 
 * {
+  font-family: 'Nunito', sans-serif;
   color: white;
 }
 
@@ -21,15 +21,11 @@ textarea {
   resize: none;
 }
 
-a {
-  font-size: 26px;
-  text-decoration: none;
-  color: #aaaaff;
-  transition: 0.2s;
-}
-
-a:hover {
-  color: orangered;
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fadeIn {

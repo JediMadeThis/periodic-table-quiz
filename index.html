@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./linkTransition/linkTransition.css" />
+    <link rel="stylesheet" href="./fancyBtn/style.css" />
 
     <title>Periodic Table Quiz</title>
   </head>
@@ -13,18 +14,32 @@
       <h1>Periodic Table Quiz</h1>
       <h2>Select a gamemode below</h2>
 
-      <a onclick="linkTransition('./Symbol/symbol.html')">Guess the symbol</a>
-      <br />
-      <a onclick="linkTransition('./Atomic Number/atomic.html')"
-        >Guess the atomic number</a
-      >
-      <br />
-      <a onclick="linkTransition('./Group/group.html')">Guess the group</a>
+      <div class="menu">
+        <button
+          class="fancyBtn top"
+          onclick="linkTransition('./Symbol/symbol.html')"
+        >
+          <div class="fancyBtnContent">Guess the Symbol</div>
+        </button>
+        <button
+          class="fancyBtn"
+          onclick="linkTransition('./Atomic Number/atomic.html')"
+        >
+          <div class="fancyBtnContent">Guess the Atomic Number</div>
+        </button>
+        <button
+          class="fancyBtn bottom"
+          onclick="linkTransition('./Group/group.html')"
+        >
+          <div class="fancyBtnContent">Guess the Group</div>
+        </button>
+      </div>
     </div>
 
     <div class="transitionPh" id="transitionPh"></div>
 
     <script src="./script.js"></script>
+    <script src="./indexscript.js"></script>
     <script src="./linkTransition/linkTransition.js"></script>
   </body>
 </html>

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../linkTransition/linkTransition.css" />
+    <link rel="stylesheet" href="../fancyBtn/style.css" />
+
     <title>Periodic Table Quiz</title>
   </head>
   <body>
@@ -25,7 +27,12 @@
         automatically.
       </p>
 
-      <a onclick="linkTransition('../index.html', true)">< Go back</a>
+      <button
+        class="fancyBtn top bottom"
+        onclick="linkTransition('../index.html', true)"
+      >
+        <div class="fancyBtnContent">< Go back</div>
+      </button>
     </div>
 
     <div class="transitionPh" id="transitionPh"></div>
